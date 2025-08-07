@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ojyoie1590*ix7&z7v0kkd*rl9^k$8ppqltouycig8e(kg-#)=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['jonathan-murray-portfolio.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['your-app.onrender.com']
 
 
 # Application definition
@@ -117,12 +117,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'web/static'),
-]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

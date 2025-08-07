@@ -8,6 +8,7 @@ djangorestframework==3.16.0
 djangorestframework_simplejwt==5.5.0
 filelock==3.18.0
 fonttools==4.58.4
+gunicorn==23.0.0
 joblib==1.5.1
 kiwisolver==1.4.8
 matplotlib==3.10.3
@@ -31,5 +32,6 @@ sqlparse==0.5.3
 threadpoolctl==3.6.0
 tzdata==2025.2
 virtualenv==20.31.2
-gunicorn
+whitenoise==6.9.0
+
 
